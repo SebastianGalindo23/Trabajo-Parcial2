@@ -53,6 +53,12 @@
       <DependentUpon>CrearUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Curso.cs" />
+    <Compile Include="EditarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarAlumno.Designer.cs">
+      <DependentUpon>EditarAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estudiante.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
