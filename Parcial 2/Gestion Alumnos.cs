@@ -58,5 +58,12 @@ namespace Parcial_2
             inicio.Show();
             
         }
+
+        private void AgregarBoton_Click(object sender, EventArgs e)
+        {
+            CrearUsuario estudiante = new CrearUsuario(logistica);
+            this.Hide();
+            estudiante.Show();
+        }
     }
 }

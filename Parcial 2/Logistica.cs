@@ -10,6 +10,7 @@ namespace Parcial_2
     {
         public List<Estudiante> listaEstudiantes = new List<Estudiante>();
         public List<Profesor> listaProfesores = new List<Profesor>();
+        public List<Curso> listadeCursos = new List<Curso>();
         public List<Nota> Calificaciones = new List<Nota>();
         public List<Usuarios> UsuariosExistentes = new List<Usuarios>();
         public Logistica() 

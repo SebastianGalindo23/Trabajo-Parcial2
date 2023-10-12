@@ -28,15 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TablaEstudiantes = new System.Windows.Forms.DataGridView();
-            this.EditarBoton = new System.Windows.Forms.Button();
-            this.AgregarBoton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Bienvenidalabel = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,22 +40,27 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EditarBoton = new System.Windows.Forms.Button();
+            this.AgregarBoton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Bienvenidalabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.TablaEstudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // TablaEstudiantes
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightBlue;
-            this.TablaEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightYellow;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TablaEstudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LightBlue;
+            this.TablaEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.LightYellow;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TablaEstudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.TablaEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TablaEstudiantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -71,7 +71,7 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            this.TablaEstudiantes.Location = new System.Drawing.Point(283, 175);
+            this.TablaEstudiantes.Location = new System.Drawing.Point(283, 174);
             this.TablaEstudiantes.Name = "TablaEstudiantes";
             this.TablaEstudiantes.ReadOnly = true;
             this.TablaEstudiantes.RowHeadersWidth = 51;
@@ -80,60 +80,10 @@
             this.TablaEstudiantes.TabIndex = 0;
             this.TablaEstudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaEstudiantes_CellContentClick);
             // 
-            // EditarBoton
-            // 
-            this.EditarBoton.Location = new System.Drawing.Point(39, 407);
-            this.EditarBoton.Name = "EditarBoton";
-            this.EditarBoton.Size = new System.Drawing.Size(200, 59);
-            this.EditarBoton.TabIndex = 1;
-            this.EditarBoton.Text = "Editar";
-            this.EditarBoton.UseVisualStyleBackColor = true;
-            // 
-            // AgregarBoton
-            // 
-            this.AgregarBoton.Location = new System.Drawing.Point(39, 293);
-            this.AgregarBoton.Name = "AgregarBoton";
-            this.AgregarBoton.Size = new System.Drawing.Size(200, 59);
-            this.AgregarBoton.TabIndex = 2;
-            this.AgregarBoton.Text = "Agregar";
-            this.AgregarBoton.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1126, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 56);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cerrar Sesion";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Bienvenidalabel
-            // 
-            this.Bienvenidalabel.AutoSize = true;
-            this.Bienvenidalabel.BackColor = System.Drawing.Color.White;
-            this.Bienvenidalabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenidalabel.Location = new System.Drawing.Point(30, 40);
-            this.Bienvenidalabel.Name = "Bienvenidalabel";
-            this.Bienvenidalabel.Size = new System.Drawing.Size(700, 54);
-            this.Bienvenidalabel.TabIndex = 4;
-            this.Bienvenidalabel.Text = "Gestion de los Alumnos inscritos";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 230);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(254, 289);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
             // Column1
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column1.HeaderText = "Nombre";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
@@ -195,6 +145,57 @@
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             this.Column8.Width = 125;
+            // 
+            // EditarBoton
+            // 
+            this.EditarBoton.Location = new System.Drawing.Point(39, 407);
+            this.EditarBoton.Name = "EditarBoton";
+            this.EditarBoton.Size = new System.Drawing.Size(200, 59);
+            this.EditarBoton.TabIndex = 1;
+            this.EditarBoton.Text = "Editar";
+            this.EditarBoton.UseVisualStyleBackColor = true;
+            // 
+            // AgregarBoton
+            // 
+            this.AgregarBoton.Location = new System.Drawing.Point(39, 293);
+            this.AgregarBoton.Name = "AgregarBoton";
+            this.AgregarBoton.Size = new System.Drawing.Size(200, 59);
+            this.AgregarBoton.TabIndex = 2;
+            this.AgregarBoton.Text = "Agregar";
+            this.AgregarBoton.UseVisualStyleBackColor = true;
+            this.AgregarBoton.Click += new System.EventHandler(this.AgregarBoton_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1126, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 56);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Volver al inicio";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Bienvenidalabel
+            // 
+            this.Bienvenidalabel.AutoSize = true;
+            this.Bienvenidalabel.BackColor = System.Drawing.Color.White;
+            this.Bienvenidalabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bienvenidalabel.Location = new System.Drawing.Point(30, 40);
+            this.Bienvenidalabel.Name = "Bienvenidalabel";
+            this.Bienvenidalabel.Size = new System.Drawing.Size(700, 54);
+            this.Bienvenidalabel.TabIndex = 4;
+            this.Bienvenidalabel.Text = "Gestion de los Alumnos inscritos";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 230);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(254, 289);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // Gestion_Alumnos
             // 
