@@ -87,6 +87,9 @@
     <EmbeddedResource Include="CrearUsuario.resx">
       <DependentUpon>CrearUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditarAlumno.resx">
+      <DependentUpon>EditarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

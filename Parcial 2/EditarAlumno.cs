@@ -12,9 +12,23 @@ namespace Parcial_2
 {
     public partial class EditarAlumno : Form
     {
-        public EditarAlumno()
+        Logistica logistica = new Logistica();
+        public EditarAlumno(Logistica logistica)
         {
             InitializeComponent();
+            this.logistica = logistica;
+        }
+
+        private void EditarAlumno_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Gestion_Alumnos gestionalumnos = new Gestion_Alumnos(logistica);
+            this.Hide();
+            gestionalumnos.Show();
         }
     }
 }

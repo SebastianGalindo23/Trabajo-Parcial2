@@ -54,5 +54,13 @@ namespace Parcial_2
             gestionaalumnos.Show();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Gestion_Alumnos gestionalumnos = new Gestion_Alumnos(logistica);
+            this.Hide();
+            gestionalumnos.Show();
+        }
     }
+    
 }

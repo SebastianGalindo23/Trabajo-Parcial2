@@ -44,6 +44,7 @@
             this.Idlabel = new System.Windows.Forms.Label();
             this.Telefonolabel = new System.Windows.Forms.Label();
             this.Correolabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Bienvenidalabel
@@ -204,12 +205,25 @@
             this.Correolabel.TabIndex = 21;
             this.Correolabel.Text = "Correo";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(782, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 56);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Volver ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CrearUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(939, 501);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Correolabel);
             this.Controls.Add(this.Telefonolabel);
             this.Controls.Add(this.Idlabel);
@@ -251,5 +265,6 @@
         private System.Windows.Forms.Label Idlabel;
         private System.Windows.Forms.Label Telefonolabel;
         private System.Windows.Forms.Label Correolabel;
+        private System.Windows.Forms.Button button1;
     }
 }

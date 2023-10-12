@@ -65,5 +65,12 @@ namespace Parcial_2
             this.Hide();
             estudiante.Show();
         }
+
+        private void EditarBoton_Click(object sender, EventArgs e)
+        {
+            EditarAlumno editaralumnos = new EditarAlumno(logistica);
+            this.Hide();
+            editaralumnos.Show();
+        }
     }
 }
