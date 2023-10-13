@@ -38,6 +38,7 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.agrearalumnos = new System.Windows.Forms.Button();
             this.SeleccionarEstudiante = new System.Windows.Forms.DomainUpDown();
@@ -86,13 +87,15 @@
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column6});
-            this.TablaCursos.Location = new System.Drawing.Point(307, 126);
+            this.Column6,
+            this.Column7});
+            this.TablaCursos.Location = new System.Drawing.Point(311, 126);
             this.TablaCursos.Name = "TablaCursos";
             this.TablaCursos.RowHeadersWidth = 51;
             this.TablaCursos.RowTemplate.Height = 24;
             this.TablaCursos.Size = new System.Drawing.Size(764, 289);
             this.TablaCursos.TabIndex = 9;
+            this.TablaCursos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaCursos_CellContentClick);
             // 
             // Column1
             // 
@@ -142,6 +145,14 @@
             this.Column6.ReadOnly = true;
             this.Column6.Width = 125;
             // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "ProfesorAsignado";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 125;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -182,6 +193,7 @@
             this.SeleccionarCursos.TabIndex = 39;
             this.SeleccionarCursos.Text = "Cursos";
             this.SeleccionarCursos.Visible = false;
+            this.SeleccionarCursos.SelectedItemChanged += new System.EventHandler(this.SeleccionarCursos_SelectedItemChanged);
             // 
             // AgregarCurso
             // 
@@ -237,5 +249,6 @@
         private System.Windows.Forms.DomainUpDown SeleccionarEstudiante;
         private System.Windows.Forms.DomainUpDown SeleccionarCursos;
         private System.Windows.Forms.Button AgregarCurso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

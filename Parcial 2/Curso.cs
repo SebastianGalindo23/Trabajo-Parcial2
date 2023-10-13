@@ -18,7 +18,9 @@ namespace Parcial_2
 
         public List<Estudiante> alumnosdelcurso = new List<Estudiante>();
 
-        public Curso(string nombre, string codigo, string descripcion, DateTime fechaInicio, DateTime fechaFin, int capacidadMaxima)
+        public Profesor     Profesor {  get; set; }
+
+        public Curso(string nombre, string codigo, string descripcion, DateTime fechaInicio, DateTime fechaFin, int capacidadMaxima, Profesor profesor)
         {
             this.Nombre = nombre;
             this.Codigo = codigo;
@@ -26,7 +28,7 @@ namespace Parcial_2
             this.FechaInicio = fechaInicio;
             this.FechaFin = fechaFin;
             this.CapacidadMaxima = capacidadMaxima;
-            
+            this.Profesor = profesor;
         }
 
         public void AgregarEstudiante(Estudiante estudiante)

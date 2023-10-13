@@ -136,6 +136,7 @@
             this.GestionNotas.TabIndex = 10;
             this.GestionNotas.Text = "Gestionar Notas";
             this.GestionNotas.UseVisualStyleBackColor = true;
+            this.GestionNotas.Click += new System.EventHandler(this.GestionNotas_Click);
             // 
             // Inicio
             // 

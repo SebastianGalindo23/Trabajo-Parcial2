@@ -43,6 +43,8 @@
             this.txtFechaInicio = new System.Windows.Forms.DateTimePicker();
             this.txtFechaFin = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
+            this.SeleccionarProfesores = new System.Windows.Forms.DomainUpDown();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRegistrarCurso
@@ -196,12 +198,34 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // SeleccionarProfesores
+            // 
+            this.SeleccionarProfesores.Location = new System.Drawing.Point(412, 287);
+            this.SeleccionarProfesores.Name = "SeleccionarProfesores";
+            this.SeleccionarProfesores.Size = new System.Drawing.Size(236, 22);
+            this.SeleccionarProfesores.TabIndex = 39;
+            this.SeleccionarProfesores.Text = "Profesores";
+            this.SeleccionarProfesores.SelectedItemChanged += new System.EventHandler(this.SeleccionarProfesores_SelectedItemChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(411, 253);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 22);
+            this.label7.TabIndex = 40;
+            this.label7.Text = "Profesor";
+            // 
             // FormRegistrarCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.SeleccionarProfesores);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtFechaFin);
             this.Controls.Add(this.txtFechaInicio);
@@ -242,5 +266,7 @@
         private System.Windows.Forms.DateTimePicker txtFechaInicio;
         private System.Windows.Forms.DateTimePicker txtFechaFin;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DomainUpDown SeleccionarProfesores;
+        private System.Windows.Forms.Label label7;
     }
 }

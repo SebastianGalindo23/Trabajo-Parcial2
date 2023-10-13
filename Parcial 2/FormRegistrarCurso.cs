@@ -12,11 +12,14 @@ namespace Parcial_2
 {
     public partial class FormRegistrarCurso : Form
     {
+        List<string> nombresProfesores;
         Logistica logistica = new Logistica();
         public FormRegistrarCurso(Logistica logistica)
         {
             InitializeComponent();
             this.logistica = logistica;
+            nombresProfesores = logistica.listaProfesores.Select(profesor => profesor.Nombre).ToList();
+            ConfigureDomainUpDown();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -26,23 +29,28 @@ namespace Parcial_2
 
         private void btnRegistrarCurso_Click(object sender, EventArgs e)
         {
+            string profesor = SeleccionarProfesores.Text;
+            if (!string.IsNullOrEmpty(profesor)){
 
-            string nombre = txtNombreCurso.Text;
-            string codigo = txtCodigo.Text;
-            string descripcion = txtDescripcion.Text;
-            DateTime fechaInicio = txtFechaInicio.Value;
-            DateTime fechaFin = txtFechaFin.Value;
-            int capacidadMaxima = int.Parse(txtCapacidadMax.Text);
+                Profesor Profesorencontrado = logistica.listaProfesores.Find(profe => profe.Nombre == profesor);
+                if (Profesorencontrado != null)
+                {
+                    string nombre = txtNombreCurso.Text;
+                    string codigo = txtCodigo.Text;
+                    string descripcion = txtDescripcion.Text;
+                    DateTime fechaInicio = txtFechaInicio.Value;
+                    DateTime fechaFin = txtFechaFin.Value;
+                    int capacidadMaxima = int.Parse(txtCapacidadMax.Text);
 
 
-            logistica.listadeCursos.Add(new Curso(nombre, codigo, descripcion, fechaInicio, fechaFin, capacidadMaxima));
+                    logistica.listadeCursos.Add(new Curso(nombre, codigo, descripcion, fechaInicio, fechaFin, capacidadMaxima, Profesorencontrado));
 
-            DialogResult = DialogResult.OK;
+                    DialogResult = DialogResult.OK;
 
 
-            MessageBox.Show("Curso registrado con éxito", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            
+                    MessageBox.Show("Curso registrado con éxito", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
         }
 
         private void FormRegistrarCurso_Load(object sender, EventArgs e)
@@ -64,6 +72,16 @@ namespace Parcial_2
                 MessageBox.Show("Solo se permiten números enteros en este campo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtCapacidadMax.Text = string.Empty;
             }
+        }
+
+        private void SeleccionarProfesores_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void ConfigureDomainUpDown()
+        {
+            SeleccionarProfesores.Items.AddRange(nombresProfesores.ToArray());
+            
         }
     }
 }

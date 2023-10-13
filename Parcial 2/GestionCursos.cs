@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parcial_2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,7 +50,7 @@ namespace Parcial_2
                 row.Cells[3].Value = curso.FechaInicio;
                 row.Cells[4].Value = curso.FechaFin;
                 row.Cells[5].Value = curso.CapacidadMaxima;
-               
+                row.Cells[6].Value = curso.Profesor.Nombre;
             }
         }
 
@@ -102,5 +103,16 @@ namespace Parcial_2
             }
 
         }
+
+        private void TablaCursos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void SeleccionarCursos_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

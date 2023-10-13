@@ -60,5 +60,12 @@ namespace Parcial_2
             gestionCursos.Show();
        
         }
+
+        private void GestionNotas_Click(object sender, EventArgs e)
+        {
+            Gestion_Notas notas = new Gestion_Notas(logistica);
+            this.Hide();
+            notas.Show();
+        }
     }
 }
