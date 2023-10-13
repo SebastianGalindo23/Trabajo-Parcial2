@@ -177,9 +177,10 @@
             // 
             // SeleccionarEstudiante
             // 
+            this.SeleccionarEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SeleccionarEstudiante.Location = new System.Drawing.Point(48, 453);
             this.SeleccionarEstudiante.Name = "SeleccionarEstudiante";
-            this.SeleccionarEstudiante.Size = new System.Drawing.Size(145, 22);
+            this.SeleccionarEstudiante.Size = new System.Drawing.Size(145, 30);
             this.SeleccionarEstudiante.TabIndex = 38;
             this.SeleccionarEstudiante.Text = "Estudiante";
             this.SeleccionarEstudiante.Visible = false;
@@ -187,9 +188,10 @@
             // 
             // SeleccionarCursos
             // 
+            this.SeleccionarCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SeleccionarCursos.Location = new System.Drawing.Point(239, 453);
             this.SeleccionarCursos.Name = "SeleccionarCursos";
-            this.SeleccionarCursos.Size = new System.Drawing.Size(145, 22);
+            this.SeleccionarCursos.Size = new System.Drawing.Size(145, 30);
             this.SeleccionarCursos.TabIndex = 39;
             this.SeleccionarCursos.Text = "Cursos";
             this.SeleccionarCursos.Visible = false;

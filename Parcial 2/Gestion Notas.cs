@@ -21,8 +21,7 @@ namespace Parcial_2
             this.logistica = logistica;
             NombreCursos = logistica.listadeCursos.Select(cursos => cursos.Nombre).ToList();
             EstudianteEnCursos = logistica.listaEstudiantes.Select(estudiante => estudiante.Nombre).ToList();
-            ConfigureDomainUpDown();
-            
+            ConfigureDomainUpDown();       
         }
 
         private void Gestion_Notas_Load(object sender, EventArgs e)
@@ -81,14 +80,17 @@ namespace Parcial_2
                 if (curso != null && estudiante != null)
                 {
                     logistica.Calificaciones.Add(new Nota(curso, estudiante, nota));
-                    TablaNotas.Rows.Clear();
+                    this.TablaNotas.Rows.Clear();
+                    this.Tablapromedio.Rows.Clear();
                     llenarTabla();
+                    CalcularPromedio();
                 }
             }
             else
             {
                 MessageBox.Show("El formato de la nota no es válido. Ingrese un número válido.", "Error");
             }
+
         }
 
         private void Notatxt_TextChanged(object sender, EventArgs e)
@@ -109,7 +111,50 @@ namespace Parcial_2
                 row.Cells[0].Value = nota.Curso.Nombre;
                 row.Cells[1].Value = nota.Estudiante.Nombre;
                 row.Cells[2].Value = nota.Valor;
+            }
+        }
 
+        private void CalcularPromedio()
+        {
+            Dictionary<string, double> sumasPorNombre = new Dictionary<string, double>();
+            Dictionary<string, int> contadorPorNombre = new Dictionary<string, int>();
+
+            foreach (Nota nota in logistica.Calificaciones)
+            {
+                if (sumasPorNombre.ContainsKey(nota.Curso.Nombre))
+                {
+                    sumasPorNombre[nota.Curso.Nombre] += nota.Valor;
+                    contadorPorNombre[nota.Curso.Nombre]++;
+                }
+                else
+                {
+                    sumasPorNombre[nota.Curso.Nombre] = nota.Valor;
+                    contadorPorNombre[nota.Curso.Nombre] = 1;
+                }
+            }
+
+            Dictionary<string, double> promediosPorNombre = new Dictionary<string, double>();
+
+            foreach (var kvp in sumasPorNombre)
+            {
+                string nombreCurso = kvp.Key;
+                double sumaNotas = kvp.Value;
+                int cantidadNotas = contadorPorNombre[nombreCurso];
+
+                double promedio = sumaNotas / cantidadNotas;
+
+                promediosPorNombre[nombreCurso] = promedio;
+            }
+
+            foreach (var kvp in promediosPorNombre)
+            {
+                string nombreCurso = kvp.Key;
+                double promedio = kvp.Value;
+
+                int rowIndex = Tablapromedio.Rows.Add();
+                DataGridViewRow row = Tablapromedio.Rows[rowIndex];
+                row.Cells[0].Value = nombreCurso; 
+                row.Cells[1].Value = promedio; 
             }
         }
     }

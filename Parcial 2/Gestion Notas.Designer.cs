@@ -39,8 +39,12 @@
             this.SeleccionarAlumnos = new System.Windows.Forms.DomainUpDown();
             this.ReporteBoton = new System.Windows.Forms.Button();
             this.Notatxt = new System.Windows.Forms.TextBox();
+            this.Tablapromedio = new System.Windows.Forms.DataGridView();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TablaNotas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tablapromedio)).BeginInit();
             this.SuspendLayout();
             // 
             // Bienvenidalabel
@@ -58,7 +62,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(643, 20);
+            this.button1.Location = new System.Drawing.Point(812, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 56);
             this.button1.TabIndex = 6;
@@ -71,7 +75,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Location = new System.Drawing.Point(21, 114);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(690, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(740, 44);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
@@ -86,7 +90,7 @@
             this.TablaNotas.Name = "TablaNotas";
             this.TablaNotas.RowHeadersWidth = 51;
             this.TablaNotas.RowTemplate.Height = 24;
-            this.TablaNotas.Size = new System.Drawing.Size(559, 251);
+            this.TablaNotas.Size = new System.Drawing.Size(508, 251);
             this.TablaNotas.TabIndex = 8;
             this.TablaNotas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaNotas_CellContentClick);
             // 
@@ -152,12 +156,41 @@
             this.Notatxt.TabIndex = 41;
             this.Notatxt.TextChanged += new System.EventHandler(this.Notatxt_TextChanged);
             // 
+            // Tablapromedio
+            // 
+            this.Tablapromedio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Tablapromedio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column4,
+            this.Column5});
+            this.Tablapromedio.Location = new System.Drawing.Point(554, 191);
+            this.Tablapromedio.Name = "Tablapromedio";
+            this.Tablapromedio.RowHeadersWidth = 51;
+            this.Tablapromedio.RowTemplate.Height = 24;
+            this.Tablapromedio.Size = new System.Drawing.Size(322, 247);
+            this.Tablapromedio.TabIndex = 42;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Cursos";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Promedios";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
+            // 
             // Gestion_Notas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(981, 450);
+            this.Controls.Add(this.Tablapromedio);
             this.Controls.Add(this.Notatxt);
             this.Controls.Add(this.ReporteBoton);
             this.Controls.Add(this.SeleccionarAlumnos);
@@ -171,6 +204,7 @@
             this.Load += new System.EventHandler(this.Gestion_Notas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TablaNotas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tablapromedio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +223,8 @@
         private System.Windows.Forms.DomainUpDown SeleccionarAlumnos;
         private System.Windows.Forms.Button ReporteBoton;
         private System.Windows.Forms.TextBox Notatxt;
+        private System.Windows.Forms.DataGridView Tablapromedio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
