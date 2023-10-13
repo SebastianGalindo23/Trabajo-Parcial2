@@ -42,7 +42,12 @@ namespace Parcial_2
         {
             if (int.TryParse(Idtext.Text, out int id) && int.TryParse(Numerotext.Text, out int numero))
             {
-                logistica.listaEstudiantes.Add(new Estudiante(Nombretext.Text, Apellidotext.Text, Fechanacimiento.Value, Direcciontext.Text, id, Correotext.Text, numero));
+                string nombre = Nombretext.Text;
+                string apellido = Apellidotext.Text;
+                DateTime fechanacimiento = Fechanacimiento.Value;
+                string direccion= Direcciontext.Text;
+                string correo = Correotext.Text;
+                logistica.listaEstudiantes.Add(new Estudiante(nombre, apellido, fechanacimiento, direccion, id, correo, numero));
             }
             else
             {

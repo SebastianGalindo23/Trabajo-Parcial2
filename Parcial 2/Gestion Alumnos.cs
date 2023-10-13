@@ -41,9 +41,6 @@ namespace Parcial_2
                 row.Cells[5].Value = estudiante.CorreoElectronico;
                 row.Cells[6].Value = estudiante.NumeroCelular;
                 row.Cells[7].Value = estudiante.Matricula;
-
-
-
             }
         }
         private void Gestion_Alumnos_Load(object sender, EventArgs e)

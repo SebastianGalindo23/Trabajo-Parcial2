@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Parcial_2
 {
@@ -14,9 +15,10 @@ namespace Parcial_2
         public DateTime FechaInicio { get; set; }
         public DateTime FechaFin { get; set; }
         public int CapacidadMaxima { get; set; }
-       
 
-        public Curso(string nombre, string codigo, string descripcion, DateTime fechaInicio, DateTime fechaFin, int capacidadMaxima )
+        public List<Estudiante> alumnosdelcurso = new List<Estudiante>();
+
+        public Curso(string nombre, string codigo, string descripcion, DateTime fechaInicio, DateTime fechaFin, int capacidadMaxima)
         {
             this.Nombre = nombre;
             this.Codigo = codigo;
@@ -25,6 +27,19 @@ namespace Parcial_2
             this.FechaFin = fechaFin;
             this.CapacidadMaxima = capacidadMaxima;
             
+        }
+
+        public void AgregarEstudiante(Estudiante estudiante)
+        {
+            if (alumnosdelcurso.Count < CapacidadMaxima)
+            {
+                alumnosdelcurso.Add(estudiante);
+                
+            }
+            else
+            {
+                MessageBox.Show("El curso esta lleno");
+            }
         }
     }
 }

@@ -158,7 +158,7 @@
             // 
             // AgregarBoton
             // 
-            this.AgregarBoton.Location = new System.Drawing.Point(39, 293);
+            this.AgregarBoton.Location = new System.Drawing.Point(39, 281);
             this.AgregarBoton.Name = "AgregarBoton";
             this.AgregarBoton.Size = new System.Drawing.Size(200, 59);
             this.AgregarBoton.TabIndex = 2;

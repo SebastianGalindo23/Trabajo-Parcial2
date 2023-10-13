@@ -51,7 +51,6 @@ namespace Parcial_2
                 Estudiante estudianteEncontrado = logistica.listaEstudiantes.FirstOrDefault(est => est.Nombre == estudianteSeleccionado);
                 if (estudianteEncontrado != null)
                 {
-
                     estudianteEncontrado.Nombre = Nombretext.Text;
                     estudianteEncontrado.Apellido = Apellidotext.Text;
                     estudianteEncontrado.FechaNacimiento = Fechanacimiento.Value;

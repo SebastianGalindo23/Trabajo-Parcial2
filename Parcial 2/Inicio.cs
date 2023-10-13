@@ -55,14 +55,10 @@ namespace Parcial_2
 
         private void btnRegistrarCurso_Click(object sender, EventArgs e)
         {
-            using (FormRegistrarCurso form = new FormRegistrarCurso())
-            {
-                DialogResult result = form.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-
-                }
-            }
+            GestionCursos gestionCursos = new GestionCursos(logistica);
+            this.Hide();
+            gestionCursos.Show();
+       
         }
     }
 }

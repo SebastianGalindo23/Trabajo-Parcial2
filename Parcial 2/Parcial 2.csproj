@@ -84,6 +84,12 @@
     <Compile Include="Gestion Alumnos.Designer.cs">
       <DependentUpon>Gestion Alumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCursos.Designer.cs">
+      <DependentUpon>GestionCursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestorCursos.cs" />
     <Compile Include="GestorProfesores.cs" />
     <Compile Include="Inicio.cs">
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion Alumnos.resx">
       <DependentUpon>Gestion Alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCursos.resx">
+      <DependentUpon>GestionCursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
