@@ -90,7 +90,7 @@ namespace Parcial_2
                 if (estudianteEncontrado != null && cursoencontrado != null)
                 {
                     cursoencontrado.AgregarEstudiante(estudianteEncontrado);
-                    MessageBox.Show($"Se agrego el estudiante: {estudianteEncontrado.Nombre} al curso: {cursoencontrado.Nombre}");
+                    
                     SeleccionarCursos.Visible = false;
                     SeleccionarEstudiante.Visible = false;
                     AgregarCurso.Visible = false;

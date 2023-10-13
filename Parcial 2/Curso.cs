@@ -36,7 +36,8 @@ namespace Parcial_2
             if (alumnosdelcurso.Count < CapacidadMaxima)
             {
                 alumnosdelcurso.Add(estudiante);
-                
+                MessageBox.Show($"Se agrego el estudiante: {estudiante.Nombre} al curso:");
+
             }
             else
             {

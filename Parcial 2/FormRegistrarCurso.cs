@@ -49,8 +49,17 @@ namespace Parcial_2
 
 
                     MessageBox.Show("Curso registrado con éxito", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    limpiar();
                 }
             }
+        }
+
+        private void limpiar()
+        {
+            txtCapacidadMax.Clear();
+            txtCodigo.Clear();
+            txtDescripcion.Clear();
+            txtNombreCurso.Clear();
         }
 
         private void FormRegistrarCurso_Load(object sender, EventArgs e)

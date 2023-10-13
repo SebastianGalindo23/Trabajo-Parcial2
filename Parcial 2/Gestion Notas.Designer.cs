@@ -38,6 +38,7 @@
             this.SeleccionarCursos = new System.Windows.Forms.DomainUpDown();
             this.SeleccionarAlumnos = new System.Windows.Forms.DomainUpDown();
             this.ReporteBoton = new System.Windows.Forms.Button();
+            this.Notatxt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TablaNotas)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +71,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Location = new System.Drawing.Point(21, 114);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(625, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(690, 44);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
@@ -85,7 +86,7 @@
             this.TablaNotas.Name = "TablaNotas";
             this.TablaNotas.RowHeadersWidth = 51;
             this.TablaNotas.RowTemplate.Height = 24;
-            this.TablaNotas.Size = new System.Drawing.Size(426, 251);
+            this.TablaNotas.Size = new System.Drawing.Size(559, 251);
             this.TablaNotas.TabIndex = 8;
             this.TablaNotas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TablaNotas_CellContentClick);
             // 
@@ -121,6 +122,7 @@
             this.SeleccionarCursos.Size = new System.Drawing.Size(145, 22);
             this.SeleccionarCursos.TabIndex = 38;
             this.SeleccionarCursos.Text = "Cursos";
+            this.SeleccionarCursos.SelectedItemChanged += new System.EventHandler(this.SeleccionarCursos_SelectedItemChanged);
             // 
             // SeleccionarAlumnos
             // 
@@ -134,12 +136,21 @@
             // ReporteBoton
             // 
             this.ReporteBoton.BackColor = System.Drawing.Color.Yellow;
-            this.ReporteBoton.Location = new System.Drawing.Point(447, 120);
+            this.ReporteBoton.Location = new System.Drawing.Point(533, 120);
             this.ReporteBoton.Name = "ReporteBoton";
             this.ReporteBoton.Size = new System.Drawing.Size(178, 33);
             this.ReporteBoton.TabIndex = 40;
             this.ReporteBoton.Text = "Agregar Reporte";
             this.ReporteBoton.UseVisualStyleBackColor = false;
+            this.ReporteBoton.Click += new System.EventHandler(this.ReporteBoton_Click);
+            // 
+            // Notatxt
+            // 
+            this.Notatxt.Location = new System.Drawing.Point(403, 126);
+            this.Notatxt.Name = "Notatxt";
+            this.Notatxt.Size = new System.Drawing.Size(99, 22);
+            this.Notatxt.TabIndex = 41;
+            this.Notatxt.TextChanged += new System.EventHandler(this.Notatxt_TextChanged);
             // 
             // Gestion_Notas
             // 
@@ -147,6 +158,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Notatxt);
             this.Controls.Add(this.ReporteBoton);
             this.Controls.Add(this.SeleccionarAlumnos);
             this.Controls.Add(this.SeleccionarCursos);
@@ -176,5 +188,6 @@
         private System.Windows.Forms.DomainUpDown SeleccionarCursos;
         private System.Windows.Forms.DomainUpDown SeleccionarAlumnos;
         private System.Windows.Forms.Button ReporteBoton;
+        private System.Windows.Forms.TextBox Notatxt;
     }
 }
