@@ -61,6 +61,16 @@ namespace Parcial_2
             this.Hide();
             gestionalumnos.Show();
         }
+
+        private void CrearUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fechanacimiento_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

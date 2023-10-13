@@ -40,5 +40,10 @@ namespace Parcial_2
             MessageBox.Show("Nombre de usuario o contraseña incorrectos.");
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

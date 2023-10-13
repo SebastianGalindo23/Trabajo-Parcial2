@@ -66,12 +66,26 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegistrarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrarCurso.Designer.cs">
+      <DependentUpon>FormRegistrarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrarProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrarProfesor.Designer.cs">
+      <DependentUpon>FormRegistrarProfesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gestion Alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gestion Alumnos.Designer.cs">
       <DependentUpon>Gestion Alumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestorCursos.cs" />
+    <Compile Include="GestorProfesores.cs" />
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +106,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrarCurso.resx">
+      <DependentUpon>FormRegistrarCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrarProfesor.resx">
+      <DependentUpon>FormRegistrarProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion Alumnos.resx">
       <DependentUpon>Gestion Alumnos.cs</DependentUpon>

@@ -98,6 +98,7 @@
             this.Fechanacimiento.Name = "Fechanacimiento";
             this.Fechanacimiento.Size = new System.Drawing.Size(235, 22);
             this.Fechanacimiento.TabIndex = 11;
+            this.Fechanacimiento.ValueChanged += new System.EventHandler(this.Fechanacimiento_ValueChanged);
             // 
             // Numerotext
             // 
@@ -242,6 +243,7 @@
             this.Controls.Add(this.Bienvenidalabel);
             this.Name = "CrearUsuario";
             this.Text = "CrearUsuario";
+            this.Load += new System.EventHandler(this.CrearUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

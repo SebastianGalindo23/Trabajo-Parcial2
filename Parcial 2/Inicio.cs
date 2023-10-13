@@ -40,5 +40,29 @@ namespace Parcial_2
 
 
         }
+
+        private void GestionProfesores_Click(object sender, EventArgs e)
+        {
+            using (FormRegistrarProfesor form = new FormRegistrarProfesor())
+            {
+                DialogResult result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+
+                }
+            }
+        }
+
+        private void btnRegistrarCurso_Click(object sender, EventArgs e)
+        {
+            using (FormRegistrarCurso form = new FormRegistrarCurso())
+            {
+                DialogResult result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+
+                }
+            }
+        }
     }
 }

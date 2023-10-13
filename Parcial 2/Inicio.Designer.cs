@@ -35,8 +35,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.GestionAlumnos = new System.Windows.Forms.Button();
-            this.GestionProfesores = new System.Windows.Forms.Button();
-            this.GestionCursos = new System.Windows.Forms.Button();
+            this.btnRegistrarProfesor = new System.Windows.Forms.Button();
+            this.btnRegistrarCurso = new System.Windows.Forms.Button();
             this.GestionNotas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -105,25 +105,27 @@
             this.GestionAlumnos.UseVisualStyleBackColor = true;
             this.GestionAlumnos.Click += new System.EventHandler(this.GestionAlumnos_Click);
             // 
-            // GestionProfesores
+            // btnRegistrarProfesor
             // 
-            this.GestionProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GestionProfesores.Location = new System.Drawing.Point(560, 204);
-            this.GestionProfesores.Name = "GestionProfesores";
-            this.GestionProfesores.Size = new System.Drawing.Size(241, 44);
-            this.GestionProfesores.TabIndex = 8;
-            this.GestionProfesores.Text = "Gestionar Profesores";
-            this.GestionProfesores.UseVisualStyleBackColor = true;
+            this.btnRegistrarProfesor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarProfesor.Location = new System.Drawing.Point(560, 204);
+            this.btnRegistrarProfesor.Name = "btnRegistrarProfesor";
+            this.btnRegistrarProfesor.Size = new System.Drawing.Size(241, 44);
+            this.btnRegistrarProfesor.TabIndex = 8;
+            this.btnRegistrarProfesor.Text = "Gestionar Profesores";
+            this.btnRegistrarProfesor.UseVisualStyleBackColor = true;
+            this.btnRegistrarProfesor.Click += new System.EventHandler(this.GestionProfesores_Click);
             // 
-            // GestionCursos
+            // btnRegistrarCurso
             // 
-            this.GestionCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GestionCursos.Location = new System.Drawing.Point(560, 265);
-            this.GestionCursos.Name = "GestionCursos";
-            this.GestionCursos.Size = new System.Drawing.Size(241, 44);
-            this.GestionCursos.TabIndex = 9;
-            this.GestionCursos.Text = "Gestionar Cursos";
-            this.GestionCursos.UseVisualStyleBackColor = true;
+            this.btnRegistrarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarCurso.Location = new System.Drawing.Point(560, 265);
+            this.btnRegistrarCurso.Name = "btnRegistrarCurso";
+            this.btnRegistrarCurso.Size = new System.Drawing.Size(241, 44);
+            this.btnRegistrarCurso.TabIndex = 9;
+            this.btnRegistrarCurso.Text = "Gestionar Cursos";
+            this.btnRegistrarCurso.UseVisualStyleBackColor = true;
+            this.btnRegistrarCurso.Click += new System.EventHandler(this.btnRegistrarCurso_Click);
             // 
             // GestionNotas
             // 
@@ -142,8 +144,8 @@
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(839, 421);
             this.Controls.Add(this.GestionNotas);
-            this.Controls.Add(this.GestionCursos);
-            this.Controls.Add(this.GestionProfesores);
+            this.Controls.Add(this.btnRegistrarCurso);
+            this.Controls.Add(this.btnRegistrarProfesor);
             this.Controls.Add(this.GestionAlumnos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -168,8 +170,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button GestionAlumnos;
-        private System.Windows.Forms.Button GestionProfesores;
-        private System.Windows.Forms.Button GestionCursos;
+        private System.Windows.Forms.Button btnRegistrarProfesor;
+        private System.Windows.Forms.Button btnRegistrarCurso;
         private System.Windows.Forms.Button GestionNotas;
     }
 }

@@ -192,7 +192,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 230);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 211);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(254, 289);
             this.pictureBox2.TabIndex = 6;

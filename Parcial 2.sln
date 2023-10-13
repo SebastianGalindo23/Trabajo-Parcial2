@@ -5,6 +5,11 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parcial 2", "Parcial 2\Parcial 2.csproj", "{377DA345-73FC-48FB-AAAC-EA5C01AE0CDA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1BE05155-53A4-4C7E-9701-047A456FE35D}"
+	ProjectSection(SolutionItems) = preProject
+		GestorProfesores.cs = GestorProfesores.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
